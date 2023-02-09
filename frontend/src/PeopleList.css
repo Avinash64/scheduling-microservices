@@ -1,0 +1,4 @@
+.peopleList {
+    max-height: 10vh;
+    overflow-y:auto;
+}
