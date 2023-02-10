@@ -16,8 +16,8 @@ app.add_middleware(
 
 
 database = {}
-class_name = "INSERT_NAME"
-fields = INSERT_FIELDS 
+class_name = "sites"
+fields = ['address', 'capacity'] 
 
 def save(db, item):
     db[item["item_id"]] = item

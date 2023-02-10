@@ -1,8 +1,14 @@
 with open("template.py") as f:
     s:str = ''.join(f.readlines())
+name = "sites"
+fields = ["address", "capacity"]
 
-fields = ["name", "email", "phone"]
-s = s.replace("INSERT_NAME", "Person")
+name = "sessions"
+fields = ["player",]
+s = s.replace("INSERT_NAME", name)
 s = s.replace("INSERT_FIELDS", f"{fields}")
 
 print(s)
+
+with open(name + "_ms.py", 'w') as f:
+    f.write(s)
